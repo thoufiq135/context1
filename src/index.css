@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+#btn1{
+  height: 7vh;
+  width:13vw;
+  font-size: 4vh;
+  font-weight: bold;
+  background: linear-gradient(60deg,black,white,black);
+  border-radius: 2vh;
+  border:0.2vh solid white;
+  transition:all, 5s,ease-in;
+  
+}
+#btn1:hover{
+  transform: scale(0.7,1);
+}
+#nav{
+  height:15vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(90deg,red,gray,red);
+  font-size: 5vh;
+}
+#list{
+  background:linear-gradient(90deg,gray,red);
+  height:80vh;
+  width:60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:1vw;
+  margin-top: 2vw;
+  border-radius: 2vw;
+}
+img{
+  height:15vh;
+  width:15vw;
+}
+#card{
+  border:0.5vh solid black;
+  height:30vh;
+  width:29vw;
+  border-radius: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+h1{
+  font-size: 4vh;
+}
+h3{
+  font-size: 3vh;
+}
+#cart{
+  height: 5vh;
+  width:8vw;
+  margin-top: 1vh;
+  font-size: 2vh;
+  border-radius: 2vh;
+  background: transparent;
+  border:0.5vh solid black;
+  font-weight: bolder;
+}
+#cart:hover{
+  background-color: gray;
+}
+#cart:focus{
+  background-color: red;
+}
+#par{
+
+  width:100%;
+  height:100%;
+  display: flex;
+  gap:2vw;
+}
+#check{
+  background: linear-gradient(90deg,red,gray);
+  width:36vw;
+  height:fit-content;
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2vh;
+}
+#ccard{
+  background: transparent;
+  height:15vh;
+  backdrop-filter: blur(10px);
+  width:35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#form{
+  background:linear-gradient(90deg,gray,red);
+  height:60vh;
+  width:30vw;
+  margin-left: 10vw;
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:2vh
+}
+#email{
+  height:7vh;
+  width:20vw;
+  border:0.5vh solid black;
+  border-radius: 2vh;
+}
