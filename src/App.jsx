@@ -1,38 +1,32 @@
-import {createBrowserRouter,RouterProvider} from 'react-router-dom'
-import { CountProvider } from "./contextcart"
-import List from './list'
-import Pay from './payment'
-import { Link } from 'react-router-dom'
-const router=createBrowserRouter([
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { Store } from './reduxs'; 
+import List from './list';
+import Pay from './payment';
+
+const router = createBrowserRouter([
   {
-    path:"/",
-    element:<List/>
+    path: "/",
+    element: <List />,
   },
   {
-    path:"/Payment",
-    element:<Pay/>
+    path: "/Payment",
+    element: <Pay />,
   },
-])
+]);
+
 function App() {
-  
-
-
   return (
-    
-    <CountProvider>
+    <Provider store={Store}>
       <div id="nav">
         <li>Home</li>
         <li>About</li>
         <li>Account</li>
         <li>Contact</li>
-        
       </div>
-      <RouterProvider router={router}/> 
-     
-      
-    </CountProvider>  
-  )
-  
+      <RouterProvider router={router} />
+    </Provider>
+  );
 }
 
-export default App
+export default App;
